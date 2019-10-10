@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <p>answer these questions to find your new best friend</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-auto">
+                <form action="/api/friends" class="needs-validation" novalidate>
+                    <div class="form-row">
+                        <input type="text" class="nameform" placeholder="  your name">
+                    </div>
+                    
+                    <div class="form-row mt-4">
+                        <input type="text" class="imageform" placeholder="  image url">
+                    </div>
+
+                    <div class="form-row mt-4">
+                        <p>1. You are a morning person.</p>
+                        
+                        <select class="custom-select mr-sm-2 questionOne" id="inlineFormCustomSelect" required>
+                            <option selected>Choose...</option>
+                            <option value="1">1 - Strongly Disagree</option>
+                            <option value="2">2 - Medium Disagree</option>
+                            <option value="3">3 - Neutral</option>
+                            <option value="4">4 - Medium Agree</option>
+                            <option value="5">5 - Strongly Agree</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row mt-4">
+                        <p>2. You have a hard time choosing where to eat.</p>
+                        
+                        <select class="custom-select mr-sm-2 questionTwo" id="inlineFormCustomSelect" required>
+                            <option selected>Choose...</option>
+                            <option value="1">1 - Strongly Disagree</option>
+                            <option value="2">2 - Medium Disagree</option>
+                            <option value="3">3 - Neutral</option>
+                            <option value="4">4 - Medium Agree</option>
+                            <option value="5">5 - Strongly Agree</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row mt-4">
+                        <p>3. You like to "look on the brightside".</p>
+                        
+                        <select class="custom-select mr-sm-2 questionThree" id="inlineFormCustomSelect" required>
+                            <option selected>Choose...</option>
+                            <option value="1">1 - Strongly Disagree</option>
+                            <option value="2">2 - Medium Disagree</option>
+                            <option value="3">3 - Neutral</option>
+                            <option value="4">4 - Medium Agree</option>
+                            <option value="5">5 - Strongly Agree</option>
+                        </select>
+                    </div> 
+                    
+                    <div class="form-row mt-4">
+                        <p>4. You like to work hard and party hard.</p>
+                        
+                        <select class="custom-select mr-sm-2 questionFour" id="inlineFormCustomSelect" required>
+                            <option selected>Choose...</option>
+                            <option value="1">1 - Strongly Disagree</option>
+                            <option value="2">2 - Medium Disagree</option>
+                            <option value="3">3 - Neutral</option>
+                            <option value="4">4 - Medium Agree</option>
+                            <option value="5">5 - Strongly Agree</option>
+                        </select>
+                    </div> 
+
+                    <div class="form-row mt-4">
+                        <p>5. You enjoy being alone.</p>
+                        
+                        <select class="custom-select mr-sm-2 questionFive" id="inlineFormCustomSelect" required>
+                            <option selected>Choose...</option>
+                            <option value="1">1 - Strongly Disagree</option>
+                            <option value="2">2 - Medium Disagree</option>
+                            <option value="3">3 - Neutral</option>
+                            <option value="4">4 - Medium Agree</option>
+                            <option value="5">5 - Strongly Agree</option>
+                        </select>
+                    </div> 
+
+                    
+
+                    <!-- submit button -->
+                    <div class="form-row my-4">
+                        <a href="/api/friends"><button type="submit" class="btn btn-primary submit-btn">Submit</button></a>
+                    </div>
+                </form>
+
+            </div>
+        </div>    
+
+    <!-- end of master container -->
+    </div>
